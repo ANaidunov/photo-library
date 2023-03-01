@@ -8,7 +8,7 @@
   >
     <mat-grid-tile
       class="tile"
-      *ngFor="let photo of photos"
+      *ngFor="let photo of photos; trackBy: trackById"
       (click)="onPhotoClick(photo)"
     >
       <app-skeleton-image

@@ -35,6 +35,8 @@ export class InfiniteGalleryComponent implements AfterViewInit, OnDestroy {
     this.onClick.emit(photo);
   }
 
+  trackById = (index: number, photo: Photo) => photo.id;
+
   private setupIntersectionObserver() {
     const threshold = 0.2; // how much % of the element is in view
     this.intersectionObserver = new IntersectionObserver(
