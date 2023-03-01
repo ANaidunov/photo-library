@@ -10,8 +10,8 @@
 }
 
 .skeleton-image {
-  max-width: 70%;
-  max-height: 70%;
+  max-width: 90%;
+  max-height: calc(100% - variables.$mat-toolbar-height);
 }
 
 .remove-btn {
