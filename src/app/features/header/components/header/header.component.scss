@@ -1,0 +1,11 @@
+@use '/src/variables';
+
+.navigation {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+
+  a.active-link {
+    background-color: variables.$accent;
+  }
+}

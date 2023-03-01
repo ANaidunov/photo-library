@@ -1,0 +1,20 @@
+<mat-toolbar color="primary">
+  <nav class="navigation">
+    <a
+      [routerLinkActiveOptions]="{ exact: true }"
+      mat-stroked-button
+      routerLink="/"
+      routerLinkActive="active-link"
+    >
+      All photos
+    </a>
+    <a
+      [routerLinkActiveOptions]="{ exact: true }"
+      mat-stroked-button
+      routerLink="/favorites"
+      routerLinkActive="active-link"
+    >
+      Favorites photos
+    </a>
+  </nav>
+</mat-toolbar>
