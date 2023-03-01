@@ -1,0 +1,13 @@
+.tile {
+  background-size: cover;
+}
+
+.tile:hover {
+  filter: brightness(50%);
+  transition: 0.1s ease-in;
+}
+
+.last-element {
+  position: relative;
+  bottom: 400px
+}

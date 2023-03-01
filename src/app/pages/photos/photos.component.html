@@ -1,1 +1,6 @@
-<p>photos works!</p>
+<app-infinite-gallery
+  [photos]="photos$ | async"
+  [isLoading]="isLoading$ | async"
+  (onLastRowReached)="loadNextPhotos()"
+  (onClick)="addToFavorites($event)"
+></app-infinite-gallery>

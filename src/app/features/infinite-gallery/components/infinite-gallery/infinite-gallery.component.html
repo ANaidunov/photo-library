@@ -1,0 +1,25 @@
+<ng-container
+  class="container"
+  *ngIf="photos"
+>
+  <mat-grid-list
+    [cols]="tilesInRow"
+    [gutterSize]="paddingBetweenTiles"
+  >
+    <mat-grid-tile
+      class="tile"
+      *ngFor="let photo of photos"
+      (click)="onPhotoClick(photo)"
+    >
+      <app-skeleton-image
+        [src]="photo.smallSizeUrl"
+        [alt]="photo.alt"
+      ></app-skeleton-image>
+    </mat-grid-tile>
+  </mat-grid-list>
+  <div
+    class="last-element"
+    #lastElement
+  ></div>
+</ng-container>
+<app-spinner [isVisible]="!!isLoading"></app-spinner>

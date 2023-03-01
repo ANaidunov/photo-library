@@ -1,0 +1,40 @@
+:host,
+.skeleton-tile,
+img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.skeleton-tile {
+  animation: pulse 1.5s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+  animation-delay: 0.5s;
+  background: rgb(175, 175, 175) no-repeat;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.img-hidden {
+  height: 0%;
+  visibility: hidden;
+}
+
+img {
+  object-fit: cover;
+}
+
+img.scaled {
+  object-fit: scale-down;
+}

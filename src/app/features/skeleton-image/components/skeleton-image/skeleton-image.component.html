@@ -1,0 +1,12 @@
+<img
+  [class.img-hidden]="!isLoaded"
+  [class.scaled]="isScaled"
+  [src]="src"
+  [alt]="alt"
+  loading="lazy"
+  (load)="onImageLoad()"
+>
+<div
+  class="skeleton-tile"
+  *ngIf="!isLoaded"
+></div>
