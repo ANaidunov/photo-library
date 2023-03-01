@@ -4,10 +4,12 @@
     [src]="photo.url"
     [alt]="photo.alt"
     [isScaled]="true"
+    (onImageLoaded)="setImageLoaded()"
   ></app-skeleton-image>
   <button
     class="remove-btn"
     mat-stroked-button
+    [disabled]="!isImageLoaded"
     (click)="removeFromFavorites(photo)"
   >Remove from favorites</button>
 </ng-container>
