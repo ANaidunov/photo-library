@@ -1,0 +1,1 @@
+export const AUTH_TOKEN_HEADER = 'Client-ID tV3QEStnARwQVAW1QgCRZv3wStwpFYZSVOQ3FxAwU3w';
