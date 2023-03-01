@@ -1,0 +1,21 @@
+@use '/src/variables';
+
+:host {
+  display: block;
+  height: calc(100% - variables.$mat-toolbar-height);
+}
+
+.not-found-block {
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    font-size: variables.$super-large-font-size;
+    line-height: variables.$super-large-font-size;
+    color: variables.$accent;
+  }
+}
