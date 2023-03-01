@@ -1,1 +1,13 @@
-<p>photo-details works!</p>
+<ng-container *ngIf="photo$ | async as photo">
+  <app-skeleton-image
+    class="skeleton-image"
+    [src]="photo.url"
+    [alt]="photo.alt"
+    [isScaled]="true"
+  ></app-skeleton-image>
+  <button
+    class="remove-btn"
+    mat-stroked-button
+    (click)="removeFromFavorites(photo)"
+  >Remove from favorites</button>
+</ng-container>
