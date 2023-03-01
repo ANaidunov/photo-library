@@ -1,1 +1,4 @@
-<p>favorites works!</p>
+<app-infinite-gallery
+  [photos]="photos$ | async"
+  (onClick)="goToDetails($event)"
+></app-infinite-gallery>
